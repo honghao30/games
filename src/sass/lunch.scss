@@ -15,13 +15,14 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      position: relative;
     }
     input {
       flex: 1;
       height: 30px;
       border: 1px solid #ccc;
     }
-    button {
+    .submit {
       height: 34px;
       width: 70px;
       background: lightblue;
@@ -50,4 +51,53 @@
     margin: 20px auto;
     border: 1px solid #ccc;
   }
-  
+  .btn-dell  {
+    border-radius: 50%;
+    width:20px;
+    height:20px;
+    font-size: 13px;
+    background: black;
+    border: 0;
+    color:#fff;
+    position: absolute;
+    right: 85px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    .is-show {
+      display: block;
+    }
+  }
+  .lunchbox {
+    border:1px solid #ccc;
+    width: 100%;
+    height:50px;
+    overflow: hidden;
+    margin-top: 50px;
+    position: relative;
+  }
+  #lunch-list {    
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    li {
+      list-style: none;
+      font-size:16px;
+      line-height: 160%;
+    }
+  }
+  #lunch-list__roll {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0%;
+    &.is-active {
+      top:-770%;      
+    }    
+    li {
+      list-style: none;
+      font-size:16px;
+      text-align: center;
+      line-height: 160%;
+    }
+  }
