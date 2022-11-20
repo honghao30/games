@@ -1,11 +1,11 @@
 import React from 'react';
 
-function  LunchTitle() {
+function  LunchTitle(props) {
 
 
     return (
         <div className="title">
-            <h1>Lunch Menu</h1>
+            <h1>{props.children}</h1>
         </div>
       );
 }

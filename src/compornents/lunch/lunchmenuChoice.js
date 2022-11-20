@@ -9,7 +9,7 @@ function  LunchmenuChoice() {
             <button type="button">메뉴 고르기</button>
           </div>
           <div className="lunchbox">
-              <ul id="lunch-list__roll">          
+              <ul id="lunch-list__roll" className="is-active">          
                   <li>김치찌깨</li>
                   <li>참치찌깨</li>
                   <li>청국장</li>

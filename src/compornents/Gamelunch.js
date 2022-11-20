@@ -8,7 +8,7 @@ import LunchmenuChoice from './lunch/lunchmenuChoice'
 const Gamelunch = () => {
     return (
         <div className="lunch__wrap">
-            <LunchTitle />
+            <LunchTitle >Lunch menu</LunchTitle>
             <LunchmenuAdd />
             <LunchmenuChoice />
             <LunchmenuList />
